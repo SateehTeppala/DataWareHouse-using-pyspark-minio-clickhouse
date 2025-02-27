@@ -1,6 +1,10 @@
 # DataWareHouse-using-pyspark-minio-clickhouse
 DataWareHouse-using-pyspark-minio-clickhouse
 
+## high level flow diagram 
+
+![Screenshot of a comment on a GitHub issue showing an image, added in the Markdown, of an Octocat smiling and raising a tentacle.](https://raw.githubusercontent.com/SateehTeppala/DataWareHouse-using-pyspark-minio-clickhouse/refs/heads/main/flow-diagram.png)
+
 requirements
 
 - download `aws-java-sdk-bundle-1.12.782.jar` from maven repo and place it into `jars/`
@@ -22,8 +26,8 @@ requirements
 
 ## data engine with click house 
 
-1. start clickhouse with ```./clickhouse server`
-2. open dbeaver and connect to clickhouse which runs on 8123 or start `./clickhouse client` to the sql queries
+1. start clickhouse with `./clickhouse server`
+2. open dbeaver and connect to clickhouse which runs on 8123 or start `./clickhouse client` to run sql queries
 3. create a database `CREATE database myschema; `
 4. run this to create a table in clickhouse [guide](https://clickhouse.com/docs/engines/table-engines/integrations/deltalake)
 ```sql
